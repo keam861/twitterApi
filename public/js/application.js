@@ -5,3 +5,30 @@ $(document).ready(function() {
 	// de HTML este exista ya en la página. 
 
 });
+
+
+$(document).ready(function(){
+    $("#spinner").bind("ajaxSend", function() {
+        $(this).show();
+    }).bind("ajaxStop", function() {
+        $(this).hide();
+    }).bind("ajaxError", function() {
+        $(this).hide();
+  });
+ 
+ });
+
+$(document).ready(function(){
+    $('#submit').click(function() {
+        $('#spinner').show();
+    });
+});
+
+// function loadtweets(){
+   
+//     $("#tweets").append("
+//       <% @tweets.each do |tweet| %>
+//         <p><%= tweet.tuit %></p>
+//       <% end %>");
+    
+// }

@@ -33,3 +33,11 @@ Dir[APP_ROOT.join('app', 'uploaders', '*.rb')].each { |file| require file }
 
 # Configura la base de datos y modelos 
 require APP_ROOT.join('config', 'database')
+
+#The Twitter Ruby Gem Configuration
+CLIENT = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "I7PPB6NSIE4laUiZIW6NkTZy3"
+  config.consumer_secret     = "3Cx2uJkYelE5OMomHJUWBbqoL8p558C2GouIq2RYVaOskA36Zi"
+  config.access_token        = "2409996168-zVCQwRrQ2IMaeHd1SagoSQudIa6O8jEqNp3V5gM"
+  config.access_token_secret = "0ysNy9pptuPySe5gLqPMxwv8w4IGhSawABuNwvkJHyPPW"
+end
