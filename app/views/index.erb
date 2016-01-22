@@ -1,12 +1,23 @@
 <h1>Twitter API</h1>
-<p>Get the last 20 tweets of your favorite Twitter User!</p>
-<form action="/fetch" method="post">
-  <input type="text" autofocus placeholder="Enter a Twitter Name" name="twitterhandle" size="30">
+
+<p id="message"></p>
+<form id="tweet" method="post">
+  <input type="text" id ="twee" autofocus placeholder="What are you thinking ?" name="tweet" size="30">
+  <input type="submit" id="submit2" value="Tweet">
+  <br>
+</form>  
+
+<form id="begin" method="get">
+  <p>Get the last 20 tweets of your favorite Twitter User!</p>
+  <input type="text" id ="Tname" autofocus placeholder="Enter a Twitter Name" name="twitterhandle" size="30">
   <input type="submit" id="submit" value="Get Tweets">
 </form>
 <!-- <div id="spinner" class="spinner" style="display:none;">
     <img id="img-spinner" src="pacman.gif" alt="Loading"/>
 </div> -->
+<div id="spin"></div>
 
 
-<div id="tweets"></div>
+<div id="tweets">
+  
+</div>
